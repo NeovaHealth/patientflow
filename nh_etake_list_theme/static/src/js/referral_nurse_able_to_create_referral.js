@@ -9,10 +9,7 @@
         name: _t("Reconcile the demo bank statement"),
         path: '/web?debug=',
         //mode: 'test',
- 
-
         steps: [
- 
             {
                 title:     _t("Login page"),
                 element:   '.oe_topbar_name',
@@ -40,7 +37,6 @@
                 content:   _t("Select patient from drop down or enter patient details"),
                 sampleText: 'Klocko, Lindell'
             },
-
             {
                 title:     _t("Enter Symptoms"),
                 element:   'textarea[name=symptoms_notes]',
@@ -68,7 +64,6 @@
                 content:   _t("Click on save button"),
                 popover:   { next: _t("Next")}
             },
-
             {
                 title:     _t("Referral Created"),
                 waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1
@@ -76,5 +71,4 @@
  
         ]
     });
- 
-}());
+ }());
