@@ -15,42 +15,58 @@
  
             {
                 title:     _t("Login page"),
-                element:   '.oe_topbar_name'
+                element:   '.oe_topbar_name',
+                content:   _t("You are Logged in as Taylor"),
+                popover:   { next: _t("Next")}
             },
  
             {
                 title:     _t("Referral form"),
-                element:   '.oe_menu_text:contains("Referral Forms")'
-            },
- 
-             {
-                title:     _t("Create Referral"),
-                element:   '.oe_button.oe_list_add.oe_highlight:contains("Create")'
+                element:   '.oe_menu_text:contains("Referral Forms")',
+                content:   _t("Click on referral forms"),
+                popover:   { next: _t("Next")}
             },
  
             {
+                title:     _t("Create Referral"),
+                element:   '.oe_button.oe_list_add.oe_highlight:contains("Create")',
+                content:   _t("Click on <b>Create</b> button to create referral"),
+                popover:   { next: _t("Next")}
+            },
+            {
                 title:     _t("Select Patient"),
-                element:   '#oe-field-input-16',
+                element:   '.oe_horizontal_separator.oe_clear:contains("Patient Details")',
+                popover:   { next: _t("Next")},
+                content:   _t("Select patient from drop down or enter patient details"),
                 sampleText: 'Klocko, Lindell'
             },
+
             {
                 title:     _t("Enter Symptoms"),
                 element:   'textarea[name=symptoms_notes]',
+                popover:   { next: _t("Next")},
+                content:   _t("Enter Symptoms"),
                 sampleText: 'Test Symptom Notes'
             },
             {
                 title:     _t("Enter Medical History"),
                 element:   'textarea[name=medical_history_notes]',
+                popover:   { next: _t("Next")},
+                content:   _t("Enter Medical History"),
                 sampleText: 'Test Medical History Notes'
             },
             {
                 title:     _t("Enter Allergies"),
                 element:   'textarea[name=allergies]',
+                popover:   { next: _t("Next")},
+                content:   _t("Enter Allergies"),
                 sampleText: 'Test Allergies'
             },
             {
                 title:     _t("Save"),
-                element:   '.oe_form_button_save'
+                element:   '.oe_form_button_save',
+                content:   _t("Click on save button"),
+                popover:   { next: _t("Next")}
             },
 
             {
