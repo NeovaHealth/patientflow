@@ -11,33 +11,32 @@
         id: 'receptionist_able_to_update_patient_arrival',
         name: _t("Reconcile the demo bank statement"),
         path: '/web?debug=',
-        mode: 'test',
-
-
         steps: [
 
             {
                 title:     _t("Login page"),
                 element:   '.oe_topbar_name',
-                popover:   { next: _t("Start Tutorial"), end: _t("Skip It") },
-                content:   _t("Enter a name for your new product then click 'Continue'."),
+                popover:   { next: _t("Next")},
+                content:   _t("You are Logged in as receptionist")
             },
 
             {
-                title:     _t("Referral"),
+                title:     _t("Referral Board"),
                 element:   '.oe_menu_text:contains("Referral Board")',
-                popover:   {fixed:true}
+                popover:   { next: _t("Next")},
+                content:   _t("Referral Board is loaded")
             },
 
             {
-                title:     _t("Notify patient arrival (click on'Arrived'  button)"),
-                waitFor:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
-                popover:   {fixed:true}
+                title:     _t("Click on Arroved Button"),
+                element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
+                popover:   { next: _t("Next"), end: _t('End')},
+                content: _t("Notify patient arrival by clicking on arrived  button)")
             },
-            //{
-            //    title:     _t("patient arrival updated and patient is in To be clerked stage"),
-            //    waitFor:   ('td.oe_kanban_column:nth-child(3) div.oe_fold_column.oe_kanban_record').length + 1
-            //}
+            {
+               title:     _t("patient arrival updated and patient is in To be clerked stage"),
+               waitFor:   ('td.oe_kanban_column:nth-child(3) div.oe_fold_column.oe_kanban_record').length + 1
+            }
         ]
     });
 
