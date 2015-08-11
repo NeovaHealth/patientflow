@@ -16,14 +16,12 @@
                 content:   _t("You are Logged in as Taylor"),
                 popover:   { next: _t("Next")}
             },
- 
             {
                 title:     _t("Referral form"),
                 element:   '.oe_menu_text:contains("Referral Forms")',
                 content:   _t("Click on referral forms"),
                 popover:   { next: _t("Next")}
             },
- 
             {
                 title:     _t("Create Referral"),
                 element:   '.oe_button.oe_list_add.oe_highlight:contains("Create")',
@@ -35,7 +33,9 @@
                 element:   '.oe_horizontal_separator.oe_clear:contains("Patient Details")',
                 popover:   { next: _t("Next")},
                 content:   _t("Select patient from drop down or enter patient details"),
-                sampleText: 'Klocko, Lindell'
+                sampleText: 'Klocko, Lindell',
+                //alignment:  Top
+
             },
             {
                 title:     _t("Enter Symptoms"),
@@ -56,7 +56,8 @@
                 element:   'textarea[name=allergies]',
                 popover:   { next: _t("Next")},
                 content:   _t("Enter Allergies"),
-                sampleText: 'Test Allergies'
+                sampleText: 'Test Allergies',
+                //alignment: Top
             },
             {
                 title:     _t("Save"),
@@ -65,10 +66,24 @@
                 popover:   { next: _t("Next")}
             },
             {
+                title:     _t("Go to Referral Board"),
+                element:   '.oe_menu_text:contains("Referral Board")',
+                popover:   { next: _t("Next")},
+                content:   _t("After successful creation of patient referral, referral will appear in <b>Referral</b> column ")
+            },
+
+            {
+                //title:     _t("Referral Created"),
+                waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1,
+                //content:   _t("Patient referral is presented with idex card in <b>Referral</b>coulmn"),
+                //popover:   { next: _t("Next"), end:_t("End")}
+            },
+            {
                 title:     _t("Referral Created"),
-                waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1
+                waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record'),
+                content:   _t("Patient referral is presented with an index card in <b>Referral</b> coulmn"),
+                popover:   { next: _t("Next"), end:_t("End")}
             }
- 
-        ]
+         ]
     });
  }());
