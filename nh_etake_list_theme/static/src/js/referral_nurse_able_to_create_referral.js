@@ -2,8 +2,7 @@
     'use strict';
  
     var _t = openerp._t;
- 
- 
+
     openerp.Tour.register({
         id: 'referral_nurse_able_to_create_referral',
         name: _t("Reconcile the demo bank statement"),
@@ -71,7 +70,6 @@
                 popover:   { next: _t("Next")},
                 content:   _t("After successful creation of patient referral, referral will appear in <b>Referral</b> column ")
             },
-
             {
                 //title:     _t("Referral Created"),
                 waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1,
