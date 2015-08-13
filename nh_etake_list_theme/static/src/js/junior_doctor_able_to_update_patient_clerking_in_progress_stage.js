@@ -71,21 +71,21 @@
             {
                 title:     _t("Task Name"),
                 content:   _t("Click on create Task"),
-                waitFor:   'label:contains("Task Name")',
-                popover:   { fixed: true }
+                element:   'label:contains("Task Name")',
+                popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Blocking Task "),
                 content:   _t("Tick the checkbox if you wish to create blocking tasks, i.e tasks which needs to be finished before patient discharge"),
-                waitFor:   'label:contains("Blocking")',
-                popover:   { fixed: true }
+                element:   'label:contains("Blocking")',
+                popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Submit"),
                 content:   _t("Click on create Task"),
                 element:   'span:contains("Submit")',
                 placement: 'left',
-                popover:   { fixed: true }
+                popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Complete Clerking"),
