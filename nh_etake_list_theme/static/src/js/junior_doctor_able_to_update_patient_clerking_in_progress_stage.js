@@ -45,12 +45,6 @@
                 popover:   { next: _t("Next")}
             },
             {
-                title:     _t("patient stage updated"),
-                content:   _t(" Patient has moved to 'clerking in progress stage'"),
-                waitFor:   ('td.oe_kanban_column:nth-child(4) div.oe_fold_column.oe_kanban_record').length + 1,
-                popover:   { next: _t("Next")}
-            },
-            {
                 title:     _t("Edit"),
                 content:   _t("Click on 'Edit' button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
                 element:   '.oe_button.oe_form_button_edit',
@@ -64,13 +58,13 @@
             },
             {
                 title:     _t("Create Tasks"),
-                content:   _t("Click on create Task"),
+                content:   _t("Click on <b>Create Task</b> button"),
                 element:   'span:contains("Create Task")',
                 popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Task Name"),
-                content:   _t("Click on create Task"),
+                content:   _t("Enter Task Name, Example: Urine Test"),
                 element:   'label:contains("Task Name")',
                 popover:   { next: _t("Next")}
             },
@@ -89,22 +83,22 @@
             },
             {
                 title:     _t("Complete Clerking"),
-                content:   _t("Click on 'Complete Clerking button to complete clerking, if you complete clerking patient will be moved to senior review stage'"),
-                element:   'span:contains("Submit")',
+                content:   _t("Click on <b>Complete Clerking</b> button to complete clerking, if you complete clerking patient will be moved to senior review stage'"),
+                element:   'span:contains("Complete Clerking")',
+                popover:   { next: _t("Next")}
+            },
+            {
+                title:     _t("Referral Board"),
+                content:   _t("Go to referrl board"),
+                element:   '.oe_menu_text:contains("Referral Board")',
                 popover:   { next: _t("Next")}
             },
             {
                 title:     _t("patient stage updated"),
                 content:   _t(" Patient has moved to 'Senior Review stage'"),
-                waitFor:   ('td.oe_kanban_column:nth-child(5) div.oe_fold_column.oe_kanban_record').length + 1,
+                waitfor:   ('td.oe_kanban_column:nth-child(5) div.oe_fold_column.oe_kanban_record').length + 1,
                 popover:   { next: _t("Next")}
-            },
-            {
-                title:     _t("Referral Board"),
-                content:   _t("Click on <b>Referral Board</b> to go back to referral board"),
-                element:   '.oe_menu_text:contains("Referral Board")',
-                popover:   {next: _t("Next"), end:_t("End")}
-            },
+            }
         ]
     });
 }());
