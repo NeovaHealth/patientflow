@@ -5,8 +5,6 @@
     'use strict';
 
     var _t = openerp._t;
-
-
     openerp.Tour.register({
         id: 'registrar_able_to_create_referrals',
         name: _t("Reconcile the demo bank statement"),
@@ -20,13 +18,11 @@
                 title:     _t("Login page"),
                 element:   '.oe_topbar_name'
             },
-
             {
                 title:     _t("Referral form"),
                 element:   '.oe_menu_text:contains("Referral Forms")'
             },
-
-             {
+            {
                 title:     _t("Create Referral"),
                 element:   '.oe_button.oe_list_add.oe_highlight:contains("Create")'
             },
