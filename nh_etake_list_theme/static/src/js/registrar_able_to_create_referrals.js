@@ -109,6 +109,7 @@
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },*/
+            //patient arrival
             {
                 title:     _t("Click on Arrived Button"),
                 element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
@@ -187,6 +188,7 @@
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },
+            //complete clerking
             {
                 title:     _t("Complete Clerking in progress"),
                 content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking. Completing clerking will move patient to the <b>Senior Review</b> stage'"),
@@ -212,52 +214,11 @@
                 popover:   { next: _t("Next"), End: _t("End")}
             },
             {
-                title:     _t("Edit"),
-                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
-                element:   '.oe_button.oe_form_button_edit',
-                popover:   { next: _t("Next")}
-            },
-            {
-                title:     _t("Save"),
-                content:   _t("Click on Save button to save the updated Diagnosis and Plans you have entered"),
-                element:   '.oe_form_button_save',
-                popover:   { fixed:true}
-            },
-            {
-                title:     _t("Create Tasks"),
-                content:   _t("Click on <b>Create Task</b> button"),
-                element:   'span:contains("Create Task")',
-                popover:   { next: _t("Next")}
-            },
-            {
-                title:     _t("Task Name"),
-                content:   _t("Enter Task Name, Example: Urine Test"),
-                placement: 'left',
-                element:   'label:contains("Task Name")',
-                popover:   { next: _t("Next")}
-            },
-            {
-                title:     _t("Blocking Task "),
-                content:   _t("Tick the checkbox if you wish to create blocking tasks i.e. tasks which need to be finished before patient discharge."),
-                element:   'label:contains("Blocking")',
-                placement: 'left',
-                popover:   { next: _t("Next")}
-            },
-            {
-                title:     _t("Submit"),
-                content:   _t("Click <b>Submit</b> to create Task"),
-                element:   'span:contains("Submit")',
-                placement: 'left',
-                popover:   { next: _t("Next")}
-            },
-            {
                 title:     _t("Complete Review"),
-                content:   _t("Click on <b>Complete Review</b> button to complete the senior review <b>or</b> click on <b>To be Discharge</b> button"),
+                content:   _t("Click on <b>Complete Review</b> button to complete the senior review <b>or</b> click on <b>To be Discharge</b> button to move patient to <b>To Be Discharged </b>stage"),
                 element:   'span:contains("Complete Review"):visible',
                 popover:   { next: _t("Next"), End: _t("End")}
             },
-
-
         ]
     });
 
