@@ -46,7 +46,7 @@
             },
             {
                 title:     _t("Edit"),
-                content:   _t("Click on <b>Edit</b>b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
+                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
                 element:   '.oe_button.oe_form_button_edit',
                 popover:   { next: _t("Next")}
             },
@@ -54,7 +54,7 @@
                 title:     _t("Save"),
                 content:   _t("Click on Save button to save the updated Diagnosis and Plans you have entered"),
                 element:   '.oe_form_button_save',
-                popover:   { next: _t("Next")}
+                popover:   { fixed:true}
             },
             {
                 title:     _t("Create Tasks"),
