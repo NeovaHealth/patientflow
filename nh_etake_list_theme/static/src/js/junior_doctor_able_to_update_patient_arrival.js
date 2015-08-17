@@ -26,7 +26,7 @@
                 content:   _t("Referral Board is loaded")
             },
             {
-                title:     _t("Click on Arroved Button"),
+                title:     _t("Click on Arrived Button"),
                 element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
                 popover:   { next: _t("Next")},
                 content: _t("Notify patient arrival by clicking on arrived  button)")
