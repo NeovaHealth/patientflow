@@ -21,6 +21,20 @@
                 popover:   { next: _t("Next")}
             },
             {
+                title:     _t("Click on Arrived Button"),
+                element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
+                popover:   { next: _t("Next")},
+                content: _t("Notify patient arrival by clicking on arrived  button)")
+
+            },
+            {
+               title:     _t("patient arrival updated"),
+               waitFor:   ('td.oe_kanban_column:nth-child(3) div.oe_fold_column.oe_kanban_record').length + 1,
+               popover:   { next: _t("Next"), end: _t('End')},
+               content: _t("patient arrival updated and patient is in To be clerked stage")
+
+            },
+            {
                 title:     _t("Clerk patient"),
                 content:   _t("Click on: <b>Clerk</b> button to clerk a patient. The patient will moved to the <b>Clerking in Progress</b> stage'"),
                 element:   'td.oe_kanban_column:nth-child(3) .oe_fold_column.oe_kanban_record:first() button',
