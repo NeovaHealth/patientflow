@@ -46,7 +46,7 @@
             },
             {
                 title:     _t("Edit"),
-                content:   _t("Click on 'Edit' button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
+                content:   _t("Click on <b>Edit</b>b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
                 element:   '.oe_button.oe_form_button_edit',
                 popover:   { next: _t("Next")}
             },
@@ -65,7 +65,7 @@
             {
                 title:     _t("Task Name"),
                 content:   _t("Enter Task Name, Example: Urine Test"),
-                placement: 'right',
+                placement: 'left',
                 element:   'label:contains("Task Name")',
                 popover:   { next: _t("Next")}
             },
@@ -73,7 +73,7 @@
                 title:     _t("Blocking Task "),
                 content:   _t("Tick the checkbox if you wish to create blocking tasks i.e. tasks which need to be finished before patient discharge."),
                 element:   'label:contains("Blocking")',
-                placement: 'right',
+                placement: 'left',
                 popover:   { next: _t("Next")}
             },
             {
