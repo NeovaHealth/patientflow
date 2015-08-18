@@ -16,7 +16,7 @@
             {
                 title:     _t("Login page"),
                 element:   '.oe_topbar_name',
-                content:   _t("You are Logged in as Registrar"),
+                content:   _t("You are Logged in as Consultant"),
                 popover:   { next: _t("Next")}
             },
             {
@@ -72,12 +72,12 @@
                 title:     _t("Go to Referral Board"),
                 element:   '.oe_menu_text:contains("Referral Board")',
                 popover:   { next: _t("Next")},
-                content:   _t("if patient referral is created successfully then an index card with patient details is created in the <b>Referral</b> column on the <b>Referral Board</b> page")
+                content:   _t("<p>If patient referral is created successfully then an index card with patient details is created in the <b>Referral</b> column on the <b>Referral Board</b> page</p>")
             },
             {
                 title:     _t("Referral Created"),
                 waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1,
-                content:   _t("Patient referral is presented with index card in <b>Referral</b> coulmn, Click on the patient index card from <b>Referral</b> column to accept/reject referral "),
+                content:   _t("Patient referral is presented with index card in <b>Referral</b> coulmn.<br>Click on the patient index card from <b>Referral</b> column to accept/reject referral "),
                 popover:   { next: _t("Next"), end:_t("End")}
             },
             //Accept Referral
@@ -97,7 +97,7 @@
             {
                 title:     _t("Click on Submit button"),
                 element:   '.oe_button.oe_form_button span:contains("Submit")',
-                content:   _t("Click on <b>Submit</b> button, Accepting Patient Referral will move patient <b>To come in stage</b>,"),
+                content:   _t("Click on <b>Submit</b> button.<br>Accepting Patient Referral will move patient <b>To come in stage</b>,"),
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },
@@ -114,7 +114,7 @@
                 title:     _t("Click on Arrived Button"),
                 element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
                 popover:   { next: _t("Next")},
-                content: _t(" Notify patient arrival by clicking on the <b>Arrived</b>  button)")
+                content: _t(" Notify patient arrival by clicking on the <b>Arrived</b>  button")
 
             },
             {
@@ -151,7 +151,7 @@
             },
             {
                 title:     _t("Edit"),
-                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
+                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in <b>Clerking in Progress</b> stage"),
                 element:   '.oe_button.oe_form_button_edit',
                 popover:   { next: _t("Next")}
             },
@@ -192,7 +192,7 @@
             {
                 title:     _t("Complete Clerking in progress"),
                 content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking. Completing clerking will move patient to the <b>Senior Review</b> stage'"),
-                element:   'span:contains("Complete Clerking")',
+                element:   '.oe_button.oe_form_button span:contains("Complete Clerking")',
                 popover:   { next: _t("Next")}
             },
             {
@@ -221,11 +221,35 @@
                 popover:   { next: _t("Next"), End: _t("End")}
             },
             {
+                title:     _t("Referral Board"),
+                content:   _t("Click on: <b>Referral Board</b>"),
+                element:   '.oe_menu_text:contains("Referral Board")',
+                popover:   { next: _t("Next")}
+            },
+            {
                 title:     _t("Consultant Review "),
                 content:   _t("Click on the patient index card in <b>Senior Review</b> stage  if you wish to complete review.<br><b>Patient will disapear from <b>Referral Board</b> once you click on <b>Complete Review</b></b>"),
                 element:   '.oe_button.oe_form_button span:contains("Complete Review"):visible',
                 popover:   { next: _t("Next"), End: _t("End")}
             },
+            {
+                title:     _t("Referral Board"),
+                content:   _t("Click on <b>Refferal Board</b> "),
+                element:   '.oe_menu_text:contains("Referral Board")',
+                popover:   { next: _t("Next"), End: _t("End")}
+            },
+            {
+                title:     _t("Discharge Patient"),
+                content:   _t("Click on <b>Discharge</b> button to discharge patient"),
+                element:   '.oe_kanban_column:nth-child(7) .oe_highlight.btn-task.oe_kanban_action.oe_kanban_action_button:first()',
+                popover:   { next: _t("Next"), End: _t("End")}
+            },
+            {
+                title:     _t("Discharged"),
+                waitFor:   ('td.oe_kanban_column:nth-child(1) div.oe_fold_column.oe_kanban_record').length + 1,
+                content:   _t("Patient will be moved to <b>Discharged</b> stage"),
+                popover:   { next: _t("Next"), end:_t("End")}
+            }
         ]
     });
 
