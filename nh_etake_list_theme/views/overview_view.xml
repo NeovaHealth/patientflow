@@ -145,6 +145,7 @@
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/junior_doctor_able_to_create_diagnosis_plans_tasks.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/registrar_able_to_create_referrals.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/consultant.js"/>
+                <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/senior_doctor.js"/>
 
             </xpath>
         </template>
