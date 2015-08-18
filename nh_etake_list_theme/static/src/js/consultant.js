@@ -72,7 +72,7 @@
                 title:     _t("Go to Referral Board"),
                 element:   '.oe_menu_text:contains("Referral Board")',
                 popover:   { next: _t("Next")},
-                content:   _t("After successful patient referral creation, referral will appear in <b>Referral</b> column ")
+                content:   _t("if patient referral is created successfully then an index card with patient details is created in the <b>Referral</b> column on the <b>Referral Board</b> page")
             },
             {
                 title:     _t("Referral Created"),
@@ -219,7 +219,13 @@
                     "<li> Click on <b>To be Discharge</b> button to move patient to <b>To Be Discharged </b>stage</li>"),
                 element:   'span:contains("Complete Review"):visible',
                 popover:   { next: _t("Next"), End: _t("End")}
-            }
+            },
+            {
+                title:     _t("Consultant Review "),
+                content:   _t("Click on the patient index card in <b>Senior Review</b> stage  if you wish to complete review.<br><b>Patient will disapear from <b>Referral Board</b> once you click on <b>Complete Review</b></b>"),
+                element:   '.oe_button.oe_form_button span:contains("Complete Review"):visible',
+                popover:   { next: _t("Next"), End: _t("End")}
+            },
         ]
     });
 
