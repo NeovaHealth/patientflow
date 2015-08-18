@@ -97,7 +97,7 @@
             {
                 title:     _t("Click on Submit button"),
                 element:   '.oe_button.oe_form_button span:contains("Submit")',
-                content:   _t("Click on <b>Submit</b> button"),
+                content:   _t("Click on <b>Submit</b> button, Accepting Patient Referral will move patient <b>To come in stage</b>,"),
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },
@@ -114,7 +114,7 @@
                 title:     _t("Click on Arrived Button"),
                 element:   'td.oe_kanban_column:nth-child(2) .oe_fold_column.oe_kanban_record:first() button',
                 popover:   { next: _t("Next")},
-                content: _t("Accepting Patient Referral will move patient <b>To come in stage</b>, Notify patient arrival by clicking on arrived  button)")
+                content: _t(" Notify patient arrival by clicking on the <b>Arrived</b>  button)")
 
             },
             {
@@ -157,9 +157,9 @@
             },
             {
                 title:     _t("Save"),
-                content:   _t("Click on Save button to save the updated Diagnosis and Plans you have entered"),
+                content:   _t("Click on <b>Save</b> button to save the updated Diagnosis and Plans you have entered"),
                 element:   '.oe_form_button_save',
-                popover:   { fixed:true}
+                popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Create Tasks"),
@@ -209,16 +209,17 @@
             },
             {
                 title:     _t("Complete Review"),
-                content:   _t("Click on patient name if you wish to complete review"),
-                waitfor:   'td.oe_kanban_column:nth-child(5) .oe_fold_column.oe_kanban_record:first()',
+                content:   _t("Click on the patient index card in <b>Senior Review</b> stage  if you wish to complete review"),
+                element:   'td.oe_kanban_column:nth-child(5) .oe_fold_column.oe_kanban_record:first()',
                 popover:   { next: _t("Next"), End: _t("End")}
             },
             {
                 title:     _t("Complete Review"),
-                content:   _t("Click on <b>Complete Review</b> button to complete the senior review <b>or</b> click on <b>To be Discharge</b> button to move patient to <b>To Be Discharged </b>stage"),
+                content:   _t("<li>Click on <b>Complete Review</b> button to complete the senior review, which admits the patient and patient will be in <b>Cosultant Review</b> stage</li><br><b>or</b>" +
+                    "<li> Click on <b>To be Discharge</b> button to move patient to <b>To Be Discharged </b>stage</li>"),
                 element:   'span:contains("Complete Review"):visible',
                 popover:   { next: _t("Next"), End: _t("End")}
-            },
+            }
         ]
     });
 
