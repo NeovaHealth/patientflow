@@ -68,7 +68,7 @@
                 title:     _t("Save"),
                 content:   _t("Click on Save button to save the updated Diagnosis and Plans you have entered"),
                 element:   '.oe_form_button_save',
-                popover:   { fixed:true}
+                popover:   {  next: _t("Next")}
             },
             {
                 title:     _t("Create Tasks"),
@@ -99,7 +99,7 @@
             },
             {
                 title:     _t("Complete Clerking"),
-                content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking. Completing clerking will move patient to the <b>Senior Review</b> stage'"),
+                content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking.<br>Completing clerking will move patient to the <b>Senior Review</b> stage'"),
                 element:   'span:contains("Complete Clerking")',
                 popover:   { next: _t("Next")}
             },
