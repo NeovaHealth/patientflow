@@ -24,7 +24,7 @@
                 title:     _t("Referral Board"),
                 element:   '.oe_menu_text:contains("Referral Board")',
                 popover:   { next: _t("Next")},
-                  content:   _t("The <b>Referral Board</b> shows each patient represented by an index card in their current referral stage")
+                content:   _t("The <b>Referral Board</b> shows each patient represented by an index card in their current referral stage")
             },
 
             {
