@@ -127,7 +127,7 @@
             //Clerking in progress
             {
                 title:     _t("Clerk patient"),
-                content:   _t("Click on: <b>Clerk</b> button to clerk a patient. The patient will moved to the <b>Clerking in Progress</b> stage'"),
+                content:   _t("Click on: <b>Clerk</b> button to clerk a patient. The patient will moved to the <b>Clerking in Progress</b> stage"),
                 element:   'td.oe_kanban_column:nth-child(3) .oe_fold_column.oe_kanban_record:first() button',
                 popover:   { next: _t("Next")}
             },
@@ -191,7 +191,7 @@
             //complete clerking
             {
                 title:     _t("Complete Clerking in progress"),
-                content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking. Completing clerking will move patient to the <b>Senior Review</b> stage'"),
+                content:   _t("Click on: <b>Complete Clerking</b> button to complete clerking. Completing clerking will move patient to the <b>Senior Review</b> stage"),
                 element:   '.oe_button.oe_form_button span:contains("Complete Clerking")',
                 popover:   { next: _t("Next")}
             },

@@ -36,7 +36,7 @@
             },
             {
                 title:     _t("Clerk patient"),
-                content:   _t("Click on: <b>Clerk</b> button to clerk a patient. The patient will moved to the <b>Clerking in Progress</b> stage'"),
+                content:   _t("Click on: <b>Clerk</b> button to clerk a patient. The patient will moved to the <b>Clerking in Progress</b> stage"),
                 element:   'td.oe_kanban_column:nth-child(3) .oe_fold_column.oe_kanban_record:first() button',
                 popover:   { next: _t("Next")}
             },
@@ -60,7 +60,7 @@
             },
             {
                 title:     _t("Edit"),
-                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in 'Clerking in Progress' stage"),
+                content:   _t("Click on <b>Edit</b> button if you wish to edit Diagnosis and Plan when patient is in <b>Clerking in Progress</b> stage"),
                 element:   '.oe_button.oe_form_button_edit',
                 popover:   { next: _t("Next")}
             },
