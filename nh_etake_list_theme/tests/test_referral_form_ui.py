@@ -13,9 +13,9 @@ class TestReferralFormUI( openerp.tests.HttpCase):
             "openerp.Tour.run('junior_doctor', 'test')",
             "openerp.Tour.tours.junior_doctor", login="james"
         )
-    def test_registrar_able_to_create_referrals(self):
+    def test_registrar(self):
         self.phantom_js("/web",
-            "openerp.Tour.run('registrar_able_to_create_referrals', 'test')",
+            "openerp.Tour.run('registrar', 'test')",
             "openerp.Tour.tours.registrar_able_to_create_referrals", login="roger"
         )
     def test_consultant(self):

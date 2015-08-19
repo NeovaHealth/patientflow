@@ -140,7 +140,7 @@
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/nh_etake_list_theme.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/referral_nurse_able_to_create_referral.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/junior_doctor.js"/>
-                <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/registrar_able_to_create_referrals.js"/>
+                <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/registrar.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/consultant.js"/>
                 <script type="text/javascript" src="/nh_etake_list_theme/static/src/js/senior_doctor.js"/>
 
