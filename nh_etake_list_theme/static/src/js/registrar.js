@@ -11,7 +11,7 @@
         path: '/web?debug=',
         //mode: 'test',
 
-        // TODO : identify menu by data-menu attr or text node ?
+
         steps: [
             {
                 title:     _t("Login page"),
