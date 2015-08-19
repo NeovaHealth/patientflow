@@ -6,7 +6,7 @@
 
     var _t = openerp._t;
     openerp.Tour.register({
-        id: 'registrar_able_to_create_referrals',
+        id: 'registrar',
         name: _t("Reconcile the demo bank statement"),
         path: '/web?debug=',
         //mode: 'test',
