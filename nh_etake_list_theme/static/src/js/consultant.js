@@ -11,18 +11,18 @@
         path: '/web?debug=',
         //mode: 'test',
 
-        // TODO : identify menu by data-menu attr or text node ?
+
         steps: [
             {
                 title:     _t("Login page"),
                 element:   '.oe_topbar_name',
-                content:   _t("You are Logged in as Consultant"),
+                content:   _t("You are Logged in as Consultant, click on <b>Next</b>"),
                 popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Referral form"),
                 element:   '.oe_menu_text:contains("Referral Forms")',
-                content:   _t("Click on <b>Referral forms</b> button to create new referral"),
+                content:   _t("Click on <b>Referral forms</b> button to create new referral and then click on <b>Next</b>"),
                 popover:   { next: _t("Next")}
             },
             //Create Referral
@@ -36,7 +36,7 @@
                 title:     _t("Select Patient"),
                 element:   '.oe_horizontal_separator.oe_clear:contains("Patient Details")',
                 popover:   { next: _t("Next")},
-                content:   _t("Select patient from drop down or enter patient details"),
+                content:   _t("Select patient from drop down or enter patient details and then click on <b>Next</b>"),
                 sampleText: 'Klocko, Lindell',
                 //alignment:  Top
             },
@@ -44,21 +44,21 @@
                 title:     _t("Enter Symptoms"),
                 element:   'textarea[name=symptoms_notes]',
                 popover:   { next: _t("Next")},
-                content:   _t("Enter Symptoms as free text"),
+                content:   _t("Enter Symptoms as free text and click on <b>Next</b>"),
                 sampleText: 'Test Symptom Notes'
             },
             {
                 title:     _t("Enter Medical History"),
                 element:   'textarea[name=medical_history_notes]',
                 popover:   { next: _t("Next")},
-                content:   _t("Enter Medical History as free text"),
+                content:   _t("Enter Medical History as free text and click on <b>Next</b>"),
                 sampleText: 'Test Medical History Notes'
             },
             {
                 title:     _t("Enter Allergies"),
                 element:   'textarea[name=allergies]',
                 popover:   { next: _t("Next")},
-                content:   _t("Enter Allergies as free text"),
+                content:   _t("Enter Allergies as free text and click on <b>Next</b>"),
                 sampleText: 'Test Allergies'
                 //alignment: Top
             },
@@ -72,7 +72,7 @@
                 title:     _t("Go to Referral Board"),
                 element:   '.oe_menu_text:contains("Referral Board")',
                 popover:   { next: _t("Next")},
-                content:   _t("<p>If patient referral is created successfully then an index card with patient details is created in the <b>Referral</b> column on the <b>Referral Board</b> page</p>")
+                content:   _t("<p>If patient referral is created successfully then an index card with patient details is created in the <b>Referral</b> column on the <b>Referral Board</b> page</p>, click on <b>Next</b>")
             },
             {
                 title:     _t("Referral Created"),
@@ -85,19 +85,19 @@
                 title:     _t("Accept Referral"),
                 element:   '.oe_button.oe_form_button span:contains("Accept")',
                 popover:   { next: _t("Next")},
-                content:   _t("Click on <b>accept</b> button to accept referral")
+                content:   _t("Click on <b>accept</b> button to accept referral and click on <b>Next</b>")
             },
             {
                 title:     _t("Enter To come in Location"),
                 element:   'label:contains("Location To Come In")',
-                content:   _t("Enter patient's To come in Location or select location from drop down"),
+                content:   _t("Enter patient's To come in Location or select location from drop down and click on <b>Next</b>"),
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },
             {
                 title:     _t("Click on Submit button"),
                 element:   '.oe_button.oe_form_button span:contains("Submit")',
-                content:   _t("Click on <b>Submit</b> button.<br>Accepting Patient Referral will move patient <b>To come in stage</b>,"),
+                content:   _t("Click on <b>Submit</b> button.<br>Accepting Patient Referral will move patient <b>To come in stage</b>"),
                 placement: 'left',
                 popover:   { next: _t("Next")}
             },
