@@ -55,9 +55,11 @@
                                         </li>
                                     </ul>
                                     <t t-if="record.location_id.raw_value != ''">
+                                        <t t-if="record.state.raw_value != 'Discharged'">
                                         <ul>
                                             <li class="bed"><field name="location_id"/>  <t t-if="record.location_type.raw_value != 'ward'">(<field name="ward_id"/>)</t></li>
                                         </ul>
+                                        </t>
                                     </t>
                                 </div>
                                 <div class="task-numbers">
