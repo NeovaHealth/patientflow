@@ -1,3 +1,5 @@
+# Part of Patient Flow.
+# See LICENSE file for full copyright and licensing details.
 from openerp.tests import common
 from datetime import datetime as dt
 from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT as dtf
