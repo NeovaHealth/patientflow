@@ -1,3 +1,5 @@
+# Part of Patient Flow.
+# See LICENSE file for full copyright and licensing details.
 from openerp.osv import orm, fields
 import logging
 from openerp import SUPERUSER_ID

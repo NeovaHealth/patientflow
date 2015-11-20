@@ -1,4 +1,6 @@
 # -*- encoding: utf-8 -*-
+# Part of Patient Flow.
+# See LICENSE file for full copyright and licensing details.
 {
     'name': 'NH eTake List with Open eObs info',
     'version': '0.1',

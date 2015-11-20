@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Part of Patient Flow.
+# See LICENSE file for full copyright and licensing details.
 from openerp.osv import orm, osv, fields
 from datetime import datetime as dt, timedelta as td
 from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT as dtf
