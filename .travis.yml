@@ -3,56 +3,54 @@ sudo: false
 cache:
   apt: true
   directories:
-    - $HOME/.cache/pip
-
+  - "$HOME/.cache/pip"
 python:
-  - "2.7"
-
+- '2.7'
 addons:
   apt:
     packages:
-      - expect-dev  # provides unbuffer utility
-      - python-lxml  # because pip installation is slow
-      - python-simplejson
-      - python-serial
-      - python-yaml
-  postgresql: "9.3"
-
+    - expect-dev
+    - python-lxml
+    - python-simplejson
+    - python-serial
+    - python-yaml
+  postgresql: '9.3'
 env:
   global:
   - VERSION="8.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
-
+  - secure: ofzjvFN9pyjS9wTB/sjzZo8x44rC7HMxXv5EW8Nrb3oqyEVDAqIli2I7ILNxCzIdXwOsLgreK7uR56DTAq0MUHe8lEWAB/edtjUxxKHaGr2jwrl2iwy/Qp38XYesPc2PvBbsTIQgNapLrjdGuR0kAC9K+Yq6eCNLfJyF7un74xPj/qkV/JRPl8tGB59WCJ7qg+WWlu7CSHm/Mx9Bh4MN+4lvV3nwMO0wLhTZm///pgDNfL19h/q9WG9Bx5IZz047hteR5cPOth2/V3s/sGrwFNdngo+mhxbkDDH1Dbund1xF/LulvAZJkmlH4cfgLDRp/Q8lbyMY/+oy/3HGguJCOqAR36gcN62A6heY3QAtwSRcD9ElpnAO/QknmQkobf3RkMyEXZhMrLoivBvwZPpdC3B7+O1hGD0DHLXOC5PZAt5QVedQbWxSTYvzgCuNK41zKBvHxjqYnQ0flEAfDJdjl3iTe4EPrudNwt2MuM0NtscB+uTTEM5PI7vpLlsBv6e7IWaGaIQfrB+WAa6Y3Dj5nvadfLWyrGeHoWO2HDtlFnI5dGyIfHH7fsq4r6AoxrhpQcPYlQu47UpKfzxRMp3E3FzfUaEof3fgqDRiu1XMMtaqgQ5MT1Hgzk1bPuDy0j1h/AoaX1RgjxigA8xWeMrAe/eMNANl+ipCc9Ez14joT/g=
+  - secure: pnvT4k4nhcQXLt7XcHcD+LTW6Ao8YybU6wLf43qyVTkTCz3wFPcM884uszVOJAUdKbgMrDdpYBoYm4W3lw6NXhpt00ZEcxoiDjg+Q3czgJH2vY9RG/eoQJrqOimu+twFPUrsYzBDERnCkRCVS9fuH4GCt6B73rq5zMtvmdfUymV7wFBbHN8m6o687CKbDwyG4x76h9L2G6DCnyoA/DjjKtF/+Jn8RpOUXHNn6yNoWZQVQZelVzak41FD1afxAUSDig/Z3tz9Y9TnBxwuMmN/T7X9jIhpvlRTGMGakXKe37ATwppTt+D/EsN1GmqW1JDfd1Xj392YRkOU3qwa0OLDDpMIsYxHJuYSQipsP/ko/cKJjHWGjowtKAHs872rAsEhd/Da6UCB1/jyQRdVXVDhRxCt9Ln/dj2d80G3WxfaAES5VG25VQcaUllsa0bUhN0YBBLkbP19TpdYqBCC0vBrD3E1dMaIjjukaWx1sc0IDxx02YglTFSjGA78TGfGAE/eY9jOcG05cLS3ZqoI/EAwpGGznz9rCp6s1tsQ3OIkL4mg6ZnGe6gVAqFM02nDsnXTzWfQM6HGxI4hGY/3RKsT0Bvn4vTC2JPHom8Jhc45N13beLJuOZAUu3YVk1yBDj6SPdBW8bBqDUsU1XpwBkN4yF8rd0atQ3aOE6elaEY/Oz4=
+  - secure: q1C8hFhNBnQgx8X/CUCAUJ2HHQRC/DRP+zsrW40Lx83m1bSvcrTR09r3x3puYwhkqPzQfluy30YRUL7Bx1wTvkgRS4MSin3H0INVMs2BIfrM1+s5m1i+6Pj02fjXH43XkN/DMHbi0nVYl+fANcpwWTSvmNDZJb5QFJLW+bEt1PEeuPzSHj8IPxtgauDx5DyhnTOJaTmCCP9V8QFgIXUuw+HT74AvMDOfCgJfGh8xsP3EUWFwq+XKncdCu/KaGScmgjF0UO0xvrAz+++TS89e9eeIFa/KtJq6Rs1wfy7fIFmwYmhE/dkS8z883rG+SNVfdAJQzzi9hjYTNdRxIXUL7el9prozh8zsttzfObQZIjikmPDkcrtfLilJ1RhPRW3PiAKa/HVZRBu0ENdQ6ey89MpTacNbCWsQO4cGr8iGGBKWYIFyJV6d6p6Tq2nOniBt73P0Z5xwzgDE8k/nDEuTRFmWziltc0QtUxa8nhS58RWOLYB5YoXHaclYV3dlgG+sQQiJ5yi0saI5jnMZ3T5GGVJJanvwtmIeEx/Z2Nx4sjiyiHQyzNm1QrmqrkiNF0SKp5insJIH+J6jlY4K5EXk2njCpJ/78WoYGtqikdGA6Gpbe11Za6zYfsGOsnrblxVwN76WY5UGbdrEaqEP/TvjR3vOs9hCWIdw4zsZkp4R7xM=
+  - secure: hJB+wxUxZ6KaLzQ8EcqODnu/ebZXLmhzz1hTnQzhH7y++9yOCZ+IwH64DxaXFgbFpvcY5vNXWSl2ufunJtJecIfwxzsyp8f+PnFkGrut1QSIOIFxVkNuRmfkL6vFUVjxnMxvy808S9BK7tcpnRMwD91HMFOiOGkaAV6pxQsuG5pW9jKZPQY5QX/R63H1mHgMiYszimbO4JDUgZWRWOozuecCD3Yr/YXKEBoXyGHOry0u+DxKwWIPKXj/S6ijVlZx20zDy+PeOrwVTsgEf5ttoOg/fA6C+z9OwEspiyVG+kCAiRVs47gSRoubQJZM4vqF+rMl49gYgakJUkTWEpKMl4Aahi3BBvQ305d74/1TERW4piIn+Z0HiwV6lKtMWpHqKWESDB4QBLByfn/9w9b6/gu8MZWTuH8KcBtODT2rsAqX+VP651QCQW3Y2Dj/IqOVJaLWELgL6LT7sW3pS3jouYuq/7RH57wYpljmqEKvOgPySGosbLiQBmjJT7kif5xPlqTI1TbSm4FT6oICRG0J5bDtOG+3OzcSdwNUZWPQCeFaU3wPIYFdeSybHXMJnKKyGGyz1BYCBzTMvwvApqImE13EPOy5gERsgjgvwr4XvWY8yfyiO3UypR94bplSRyp86CU3NJhIV/RfZRTbmol3j1gMoGPARsb8CWZiSb8UsPs=
+  - secure: mJWa5ymVNhrwZ0RPDi1NVF5pJYUrjV5E+jKnVWtj9U7Bdkow41I4Xaq/tIE0TO0mHa6oS2DtfqwUe5iAiByegOJfh4kbcLWIYpPFzmFjvkFguanIQAWYIbIvENuT3GwsTipS4wrYn0E4u9wYwjeMoH3uRfYlpcSzayO+NVm5qiglO2UMdlXFBUe+376EuniXKMtiBEpJzoDAoP3Lo7MCbXe1ADf+PRroIZFa4nRwq1MHx7CWHshhS3YrcUJluN2XcTGq5qqN+GiI6Dvcbank0E+H6+H09Vz5bFuH3FM+aYF1u/eAE3TzunGDjhqLOoXEU+veZwPTQMeM8HzgdYPYMZ9wCnTYGoG2Eqy03dHbwCSSLVQAm+WtGajdXq1pu7NHFDYtDPgQNkBm1CNGbbDtV9AAFqqwpwFddOXsabrIVbxwy4SNakZ1aZ8StKmZ2LnDHNJyCoaUGvrXpBY50Y7ro1iMP1qlJEqDsutpqShiptUgtNElq/wSSDsZBvQzrMtkOi4wOddvqQC5MbdcTQWb2xvfYPDYTbGKQN/OSkAuJ7BUoyQDV0ZtxfAV0PPeaXbG4RR03Jwt1myoBdpkvQvHbnm5R1lTmZB9Dq9+Ii4WqY0PjnNPzt+Sh3OFMFqUE40SeWADUY6nrClLu1IoxAICo83xbPSfi0SxY5j/oFTh6x4=
+  - secure: R8utdKbMB/jYhP/ZVzWzrp4fuTVdG3kFw3fP96F65lsotrcEzrXPk8Qc5flagIqemrEVcd9uGfi6I/QAGt8z5oY/1maK97CZ5u3stV4Bhf3TCdKgBcM4AHbQuZ7qcxa83FwMLTosB6+/888/o1KjLGvYU2VuW1qsTyW8QhCHFYPb4fqOrN4Az8RbGdv6zVjr1TB9ixG0YMus8qdVMnv1Jx5hKXtZTtdTv/0uSwG7GAOhtsV/+96pmKc5hGU0rO9bPFI9dLKNjXblXMvkjInlFZo2yN/prn6ZBO9GIorOc0PNjQKcelxFqht/3yACRKpe5zvTIWyuA+GIEMNiT4aAFkG9jqIQ1U7hxF6RthYWLZ2UGWy7+nZrol2J9B/G4F4OjXvPQJgRo9l0hHHgMXxQu+4/7fZsomZlWp/ZTKvtfh+FgrJM9NCKS2q7fkYOU+cP5zzjlgtLx/T0/wataEFmAEu2b7MkdtNihlgmV9nZVHetNdpwS+RRARsvVk/IY/7gkxI2MdJreNVOiy/VoqeFHSrxN1DQVrkH0dWw7yUzO9ON6C3vLXtcLoj0WND6qxNRbSCBGqHxGslZFs4leynolhLReEhXYeFIIhpRJR96ifV2KnGp8Wu/yAzXXMLNjLHX4bIo506mEZm7L0CUmSnB7R25BLHwMOc8ZaC/o9adCzc=
+  - secure: h8ddtGVIcYm4G2wE2UyxwPf5nWDFqf1w24YMxHItItdlQyDMhqNFwjn11ARS7/FsrF82PiOh5O67G8BXekmpFqw1IehdG9La9CrRaOlZV2LI8FmhgSfwcwWeDYi2Wk3MXGVQBCCAr0lhz7LD5e67TL5594FAB43Mi9vqo5FihjGclMb9+nZfPClZrLo+wUc4mIBoNidJ7YdGwe87jSkA2HchujlHaXoljRAB4Zas+cS06FmQ+WH+Id2zrzWjeHRMFj7V4o6OT0bkdGNIHPQKrIYhcLE0FvGnAT/A8Ej9uIalttRjUx/kBs+NtEpdcY9V8wD9wwhhxK/a84fl9Ll2UHMQ9qNqKymZhtqkPEN9QYGu09/UL6ldtF8T3DXZViyjjk+lu6J7APLDbHtuhIP/ilpTIiY77HuxXWKPlaUulefjS6o2VOGlqeOeobajcnNQZQmwnSiroR3FsMGjZCty7t6WRexUklLmPaJlEQ6GC68Mf/oaTmawqr59tNeJTx9sRDgDzEvJ4dBql5ozK8LaBqWQ+Ghd98Jls80tvCGQG+cPJUNApL6krKe5p6PsrWB5Yu4lICfTJo0pbNeb6vM66kdkFWzNAKsbCC8RDUikFzix6HPxLtXcvV8r/Yx2Ghkqh74HDe5n0iiCqsiMPKSLUr0fXDB7o16WWhLIp8ndMVo=
+  - secure: j+yknCZ194zw2olzCdkgU0p6QxT6RJAdClqPmpzaZkMtOh2fH9hbddXHvkNH13Arsxpdeg/RN3XcIF9KzNKEKs+yKQR/6nu8WFJqUKf8u8e5b+4pZo3042RlkFXU3g6MMMN3rLytRVNRQwDaFsSfFW54+9j5YqDs/OxsxwKczpscpljep67T4YDWGLn9swq7uiHHdW0kawdntNf+Snl/cfVyOM8R7HAoz/r9/uT2QAw3kmYN+MABXjWoIa9Vx6ejDj62tphzzyYrMxBeGeCtYkYBtzEJ8keWk37XK/bu+afK5srKEleQCxcQAcZS74hFwQ7ZtZyGAo+Yg481j6uDx2TnEmZlXvJvn/wO7AxnKo9tuAr2HuzyqjGGiE3Ys/OFJdBwrB0DhcNCuUa7QwbZhiUgj77fm4FDqVcNscxDKpa9yxRPnnMxZEq2msD1ivyD1eUNzBq/yDV3VjxCOHgnZUDDICc9khN1dYEyTZPzI0FCZ0waT1F30u3UMdMYlfCLZSmgyWQyu/erN2Qy64UGzP+Ey0bEsluf06Nx0yThJZtmwBTDY5ng4bf7doohtGbBzK4Zlku+grMjE5CWicPdWG4d/honsulAsmV/iwYjXc1WaL17UNCrmeA6xNEpkuSDLxFfrp97oaKo0KtjqfrAC0oQQS8NaQPEwA6C97s9pOg=
   matrix:
-  # - LINT_CHECK="1" TESTS="0"
-  # Test All
-  - ODOO_REPO="valdecdev/odoo" TESTS="1" EXCLUDE="nh_odoo_fixes,nh_activity,nh_clinical,nh_ews,nh_gcs,nh_neurovascular,nh_observations,nh_pbp,nh_stools,nh_urinary_analysis,nh_vips,nh_graphs,nh_eobs,nh_eobs_api,nh_eobs_backup,nh_eobs_default,nh_eobs_kiosk,nh_eobs_theme,nh_eobs_mobile" INCLUDE="nh_doctor_activities,nh_etake_list,nh_etake_list_eobs,nh_etake_list_theme,nh_patient_flow,nh_shift_management" VERSION="openeobs-8-12" SERVER_EXPECTED_ERRORS="1"
-  # - ODOO_REPO='NeovaHealth/odoo" TESTS="1" INCLUDE="nh_odoo_fixes,nh_activity,nh_clinical" VERSION="8.0"
-  # - ODOO_REPO="odoo/odoo" TESTS="1" INCLUDE="nh_odoo_fixes,nh_clinical,nh_activity"
-
+  - ODOO_REPO="valdecdev/odoo" TESTS="1" EXCLUDE="nh_odoo_fixes,nh_activity,nh_clinical,nh_ews,nh_gcs,nh_neurovascular,nh_observations,nh_pbp,nh_stools,nh_urinary_analysis,nh_vips,nh_graphs,nh_eobs,nh_eobs_api,nh_eobs_backup,nh_eobs_default,nh_eobs_kiosk,nh_eobs_theme,nh_eobs_mobile"
+    INCLUDE="nh_doctor_activities,nh_etake_list,nh_etake_list_eobs,nh_etake_list_theme,nh_patient_flow,nh_shift_management"
+    VERSION="openeobs-8-12" SERVER_EXPECTED_ERRORS="1"
 virtualenv:
   system_site_packages: true
-
-# install dependencies
 before_install:
-  - git clone --depth=50 --branch=develop https://${CIUSER}:${CIPASSWORD}@github.com/NeovaHealth/nhclinical.git NeovaHealth/nhclinical
-  - cd NeovaHealth/nhclinical
-  - mkdir -p ${HOME}/dependencies
-  - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
-  - cd ../..
-  - git clone --depth=50 --branch=develop https://${CIUSER}:${CIPASSWORD}@github.com/NeovaHealth/openeobs.git NeovaHealth/openeobs
-  - cd NeovaHealth/openeobs
-  - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
-  - cd ${TRAVIS_BUILD_DIR}
-
+- git clone --depth=50 --branch=develop https://${CI_USER}:${CI_PASS}@github.com/NeovaHealth/nhclinical.git
+  NeovaHealth/nhclinical
+- cd NeovaHealth/nhclinical
+- mkdir -p ${HOME}/dependencies
+- for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
+- cd ../..
+- git clone --depth=50 --branch=develop https://${CI_USER}:${CI_PASS}@github.com/NeovaHealth/openeobs.git
+  NeovaHealth/openeobs
+- cd NeovaHealth/openeobs
+- for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
+- cd ${TRAVIS_BUILD_DIR}
 install:
-  - pip install --upgrade pip
-  - pip install -r requirements.txt
-  - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
-  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
-  - travis_install_nightly
-
+- pip install --upgrade pip
+- pip install -r requirements.txt
+- git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+- export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
+- travis_install_nightly
 script:
-  - travis_run_tests
-
+- travis_run_tests
 after_script:
-  - coverage report -m
+- coverage report -m
