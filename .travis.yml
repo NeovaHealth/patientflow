@@ -33,15 +33,19 @@ env:
 virtualenv:
   system_site_packages: true
 before_install:
-- git clone --depth=50 --branch=${TRAVIS_BRANCH} https://${CI_USER}:${CI_PASS}@github.com/NeovaHealth/nhclinical.git
+- git clone --depth=50 https://github.com/NeovaHealth/nhclinical.git
   NeovaHealth/nhclinical
 - cd NeovaHealth/nhclinical
+- git fetch
+- git checkout ${TRAVIS_BRANCH}
 - mkdir -p ${HOME}/dependencies
 - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
 - cd ../..
-- git clone --depth=50 --branch=${TRAVIS_BRANCH} https://${CI_USER}:${CI_PASS}@github.com/NeovaHealth/openeobs.git
+- git clone --depth=50 https://github.com/NeovaHealth/openeobs.git
   NeovaHealth/openeobs
 - cd NeovaHealth/openeobs
+- git fetch
+- git checkout ${TRAVIS_BRANCH}
 - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
 - cd ${TRAVIS_BUILD_DIR}
 install:
