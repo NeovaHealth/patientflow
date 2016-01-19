@@ -37,7 +37,7 @@ before_install:
   NeovaHealth/nhclinical
 - cd NeovaHealth/nhclinical
 - git fetch
-- git checkout ${TRAVIS_BRANCH}
+- git checkout $TRAVIS_BRANCH
 - mkdir -p ${HOME}/dependencies
 - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
 - cd ../..
@@ -45,7 +45,7 @@ before_install:
   NeovaHealth/openeobs
 - cd NeovaHealth/openeobs
 - git fetch
-- git checkout ${TRAVIS_BRANCH}
+- git checkout $TRAVIS_BRANCH
 - for DIRECTORY in *; do mv ${DIRECTORY} ${HOME}/dependencies/${DIRECTORY}; done
 - cd ${TRAVIS_BUILD_DIR}
 install:
